@@ -1,0 +1,404 @@
+/* style of the login */
+
+#bodylogin {
+    background-color: rgb(145, 48, 72);
+    display: grid;
+    place-items: center;
+    width: min-content;
+    margin: 40px auto;
+}
+
+
+/* backgruond img */
+
+#backgroundImg {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+
+/* style of login screen */
+
+#loginScreen {
+    background-image: repeating-linear-gradient(rgba(255, 255, 255, 0.795), rgb(0, 0, 0));
+    margin-top: -810px;
+    margin-left: 30px;
+    padding-top: 60px;
+    height: 500px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+
+/* title of log */
+
+#loginTitel {
+    font-size: 80px;
+    font-family: fantasy;
+    margin-left: 110px;
+}
+
+
+/* div for the inputs name & pass  */
+
+#inputDiv {
+    height: 200px;
+    width: 200px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+#passInptDiv {
+    height: 50px;
+    width: 200px;
+    margin-top: 160px;
+}
+
+
+/* button login */
+
+#loginButton {
+    background-color: rgb(180, 23, 23);
+    color: rgb(0, 0, 0);
+    height: 60px;
+    width: 130px;
+    border-color: aliceblue;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 165px;
+    font-size: 30px;
+}
+
+
+/* title username */
+
+#userName {
+    font-family: cursive;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/*title password  */
+
+#pass {
+    font-family: cursive;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/* input area for name */
+
+#inptName {
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* input area for pass */
+
+#inptPass {
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* div for masseg for error name */
+
+#errorName {
+    height: 30px;
+    width: 170px;
+}
+
+
+/*  div for masseg for error password */
+
+#errorPass {
+    height: 30px;
+    width: 200px;
+    margin-left: 106px;
+}
+
+
+/* error password */
+
+#errPass {
+    position: absolute;
+    margin-top: 5px;
+    font-style: oblique;
+    color: rgba(219, 6, 6, 0.952);
+    font-size: 25px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: rgb(240, 224, 224);
+    text-shadow: 3px 2px rgb(221, 27, 27);
+    letter-spacing: 2px;
+}
+
+
+/* error user name  */
+
+#errName {
+    position: absolute;
+    margin-top: 5px;
+    font-style: oblique;
+    font-weight: 900;
+    color: rgb(240, 224, 224);
+    text-shadow: 3px 2px rgb(221, 27, 27);
+    font-size: 25px;
+    text-transform: capitalize;
+    padding: 5px 5px;
+    letter-spacing: 2px;
+}
+
+
+/* from here the style for the Difficulty page  */
+
+
+/* ________________________________________________________ */
+
+
+/* body difficulty page */
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    background: rgb(10, 48, 119);
+}
+
+
+/*  div for the manu */
+
+#page_level {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    height: 320px;
+    margin: 50px 130px;
+    margin-top: 20px;
+    background-color: rgb(81, 127, 212);
+    text-align: center;
+    border-style: double;
+    border-color: aliceblue;
+    border-radius: 15px;
+}
+
+
+/* title welcome */
+
+#welcome {
+    font-weight: 900;
+    font-size: 60px;
+    color: antiquewhite;
+}
+
+
+/* div that hidden when the user start the game  */
+
+#hidden {
+    color: aliceblue;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* button choose difficulty level */
+
+.BtnLevel {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80px;
+    height: 50px;
+    margin: 0 15px;
+    border-radius: 40%;
+    background: rgb(27, 93, 214);
+}
+
+
+/* hover on the tile in the board when mouse hover on any tile */
+
+.cell:hover {
+    background-color: rgb(191, 226, 241);
+}
+
+
+/* style for tile=cell */
+
+.cell {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 25pt;
+    background: cornsilk;
+    color: darkblue;
+}
+
+
+/* border on the board in the right side on the tile /9 */
+
+.rightBorder {
+    border-right: 4px solid black;
+}
+
+
+/* border on the board in the bottom on the tile /9 */
+
+.bottomBorder {
+    border-bottom: 4px solid black;
+}
+
+
+/* manu chack numbers that choose by the user */
+
+#numbers {
+    margin-top: 0px;
+    display: none;
+}
+
+
+/* hover on the any number on the choose numbers */
+
+.nums:hover {
+    background-color: rgb(110, 202, 245);
+}
+
+
+/* styre for numbers button  */
+
+.nums {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    padding: 4px 12px;
+    margin: 0 auto;
+    background: rgb(203, 211, 233);
+    border-radius: 30%;
+}
+
+
+/* button start game */
+
+#start_btn {
+    font-size: 20px;
+    font-weight: 900;
+    width: 120px;
+    height: 65px;
+    margin-top: 70px;
+    border-radius: 15PX;
+}
+
+
+/* when incorect number get in to the board is color change to red */
+
+p.incorect {
+    background-color: red;
+}
+
+
+/* .nums.selected {
+    background-color: black;
+} */
+
+
+/* button for try again when the user won */
+
+#btnagain {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    margin-left: 170px;
+    border-color: blue;
+    border-width: 5px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: rgb(231, 231, 243);
+    text-transform: capitalize;
+    display: none;
+}
+
+
+/* button try again inside the game */
+
+#reload {
+    display: none;
+    margin: 0 auto;
+    width: 110px;
+    height: 40px;
+    background-color: rgb(233, 51, 19);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+/* style of the heart icon */
+
+.heart {
+    color: red;
+    font-size: 60px;
+    text-shadow: -1px -1px 2px azure;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+
+/* lives style  */
+
+#lives {
+    width: 180px;
+    height: 70px;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 170px;
+    display: none;
+}
+
+
+/* div for the board that contains within it all the tile=cell  */
+
+#board {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 400px;
+    height: 400px;
+    display: none;
+}
+
+
+/* div timer  */
+
+#div_timer {
+    width: 535px;
+    height: 80px;
+}
+
+
+/* style the numbers in timer */
+
+#timer {
+    margin-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 60px;
+    display: none;
+}

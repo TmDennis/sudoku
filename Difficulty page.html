@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>level page sudoku</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='icon' type=image/png href="sudoko_4.jpg">
+
+</head>
+
+<body>
+    <div id="page_level">
+        <h1 id="welcome">welcome</h1>
+
+
+
+        <div id="hidden">
+            <h3>choose difficulty level</h3>
+            <label><input type="radio" class="BtnLevel" id="btn easy" name="diff" value="easy" checked>EASY</label>
+            <label><input type="radio" class="BtnLevel" id="btn medium" name="diff" value="medium">MEDIUM</label>
+            <label><input type="radio" class="BtnLevel" id="btn hard" name="diff" value="hard">HARD</label>
+
+            <br>
+            <button id="start_btn" onclick="GameBuild()">START GAME</button>
+
+
+
+        </div>
+        <div>
+            <p id="end"></p>
+        </div>
+        <div id="div_timer">
+            <p id="timer">00:00</p>
+            <br>
+        </div>
+        <div id="lives">
+            <p class="heart" id="heart1" value="1">♥</p>
+            <p class="heart" id="heart2" value="2">♥</p>
+            <p class="heart" id="heart3" value="3">♥</p>
+        </div>
+        <div id="numbers">
+            <button class="nums" id="one" onclick="startgame (value)" value="1">1</button>
+            <button class="nums" id="two" onclick="startgame (value)" value="2">2</button>
+            <button class="nums" id="three" onclick="startgame (value)" value="3">3</button>
+            <button class="nums" id="four" onclick="startgame (value)" value="4"> 4</button>
+            <button class="nums" id="five" onclick="startgame (value)" value="5">5</button>
+            <button class="nums" id="six" onclick="startgame (value)" value="6">6</button>
+            <button class="nums" id="seven" onclick="startgame (value)" value="7">7</button>
+            <button class="nums" id="eight" onclick="startgame (value)" value="8">8</button>
+            <button class="nums" id="nine" onclick="startgame (value)" value="9">9</button>
+        </div>
+        <div id="board"></div>
+        <button id="btnagain" onclick="agian()">Play Again?</button>
+        <button id="reload"><a href="Difficulty page.html">again</a></button>
+
+
+
+        <script src='script.js'></script>
+
+</body>
+
+</html>

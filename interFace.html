@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SuDoKu login page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='icon' type=image/png href="sudoko_4.jpg">
+
+</head>
+
+<body id="bodylogin">
+    <!--img of background -->
+    <img id="BackGroundImg" src="https://previews.123rf.com/images/aihumnoi/aihumnoi1702/aihumnoi170200787/70915991-free-sudoku-puzzle-text-background-word-cloud-concept.jpg" alt="sudoku image">
+
+    <!--login screen info-->
+    <div id="loginScreen">
+
+        <!--login title-->
+        <div id="loginTitel">SuDoKo</div>
+        <!-- div for all user name & password info-->
+        <div id="inputDiv">
+
+            <!--user name div-->
+            <div id="nameInptDiv">
+
+                <!------ title user name : -->
+                <div id="userName">User Name: </div>
+
+                <!--user name input-->
+                <input id="inptName" type="text" placeholder=" Name " required>
+
+                <div id=errorName>
+                    <!-- note if user name is wrong -->
+                    <p id='errName'></p>
+                </div>
+
+            </div>
+            <!---div for all passowrd info-->
+            <div id="passInpt">
+                <!---title passowrd -->
+                <div id="pass">Password: </div>
+                <!----input Password -->
+                <input id="inptPass" type="password" placeholder=" Password " required>
+
+                <div id=errorPass>
+                    <!--- note if wrong password-->
+                    <p id="errPass"></p>
+                </div>
+
+            </div>
+        </div>
+        <!---login button-->
+        <button id="loginButton" onclick="loginFunc()">Login</button>
+
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
